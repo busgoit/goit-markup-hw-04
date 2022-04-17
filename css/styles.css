@@ -168,11 +168,11 @@ body {
 /* стили героя */
 
 .hero {
-  background-color: var(--hero-bgcolor);
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--hero-bgcolor);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/herobg.jpg');
   background-repeat: no-repeat;
@@ -365,11 +365,15 @@ body {
   margin-right: 10px;
 }
 
-.socials-link {
+.socials-item {
   width: 44px;
   height: 44px;
+}
+
+.socials-link {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  /* background-color: tomato; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -403,6 +407,8 @@ body {
 }
 
 .client-card {
+  width: 170px;
+  height: 92px;
 }
 
 .clients-list .client-card + .client-card {
@@ -413,8 +419,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   color: var(--socials-color);
   border: 1px solid currentColor;
   border-radius: 4px;
@@ -422,6 +428,12 @@ body {
 
 .client-logo {
   fill: currentColor;
+}
+
+.client-link:focus,
+.client-link:hover {
+  border-color: var(--brand-color);
+  color: var(--brand-color);
 }
 
 /* секция "футер" */
@@ -498,8 +510,8 @@ body {
   background-color: var(--footer-socials-bgcolor);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.join .socials-link:hover,
+.join .socials-link:focus {
   background-color: var(--brand-color);
   color: var(--white-color);
 }
