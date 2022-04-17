@@ -27,6 +27,7 @@
           <a href="./index.html" title="Главная страница WebStudio" class="logo link"
             ><span class="logo-accent">Web</span>Studio</a
           >
+          <p></p>
           <ul class="header-list list">
             <li class="item"><a href="./index.html" class="link">Студия</a></li>
             <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
@@ -35,9 +36,21 @@
         </nav>
         <ul class="header-contacts list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
-          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <svg class="contacts-icon" width="10" height="16">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -160,18 +173,53 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" title="Главная страница WebStudio" class="footer-logo link"
-          ><span class="logo-accent">Web</span>Studio</a
-        >
-        <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
-        <ul class="footer-list list">
-          <li class="item">
-            <a href="mailto:info@example.com" class="footer-contakts link">info@example.com</a>
-          </li>
-          <li class="item">
-            <a href="tel:+380991111111" class="footer-contakts link">+38 099 111 11 11</a>
-          </li>
-        </ul>
+        <div class="footer-box">
+          <a href="./index.html" title="Главная страница WebStudio" class="footer-logo link"
+            ><span class="logo-accent">Web</span>Studio</a
+          >
+          <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
+          <ul class="footer-list list">
+            <li class="item">
+              <a href="mailto:info@example.com" class="footer-contacts link">info@example.com</a>
+            </li>
+            <li class="item">
+              <a href="tel:+380991111111" class="footer-contacts link">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="join">
+          <h2 class="join-title">Присоединяйтесь</h2>
+          <ul class="socials-list list">
+            <li class="socials-item">
+              <a href="#" class="socials-link link">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="#" class="socials-link link"
+                ><svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="#" class="socials-link link">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="#" class="socials-link link">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
